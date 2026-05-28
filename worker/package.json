@@ -1,0 +1,22 @@
+{
+  "name": "hosting-control-panel-worker",
+  "version": "1.0.0",
+  "description": "Deployment worker processing BullMQ queue tasks, executing docker commands and cloud notifications",
+  "main": "worker.js",
+  "scripts": {
+    "start": "node worker.js",
+    "dev": "nodemon worker.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.569.0",
+    "bullmq": "^5.8.2",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "author": "Antigravity",
+  "license": "ISC"
+}
